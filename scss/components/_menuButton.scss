@@ -1,0 +1,17 @@
+.menuButton {
+    margin: .2em .2em .2em auto;
+    padding: 0;
+    width: 32px;
+    height: 28px;
+    background-color: transparent;
+    border: transparent;
+    @include flexy($dir: column, $align: center, $just: space-evenly);
+    & span {
+        width: 24px;
+        height: 4px;
+        content: '';
+        display: table;
+        background-color: rgb(0, 82, 214);
+        border-radius: .3em;
+    }
+}
