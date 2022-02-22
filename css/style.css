@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  padding: 0.2em 0 0 0;
+  padding: 0;
 }
 header nav ul {
   padding: 0;
@@ -60,6 +60,19 @@ main section h1 {
   display: table;
   background-color: #0052d6;
   border-radius: 0.3em;
+}
+
+.logo {
+  padding-top: 0.3em;
+}
+.logo img {
+  width: 100%;
+}
+.logo h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+  color: #2f2f2f;
 }
 
 /*# sourceMappingURL=style.css.map */
