@@ -1,5 +1,5 @@
 .menuButton {
-    margin: .2em .2em .2em auto;
+    margin: .2em .6em .2em auto;
     padding: 0;
     width: 24px;
     height: 28px;
@@ -13,6 +13,8 @@
         display: table;
         background-color: rgb(0, 82, 214);
         border-radius: .3em;
+        transition: transform .4s ease-in-out;
+        transform: rotate(0deg) translate(0em, 0em);
     }
     & span:nth-child(1) {
         width: 14px;
@@ -20,5 +22,17 @@
     & span:nth-child(3) {
         width: 14px;
         align-self: flex-end;
+    }
+}
+
+.menuButton.opened {
+    & span:nth-child(1) {
+        transform: rotate(40deg) translate(.2em, .2em);
+    }
+    & span:nth-child(2) {
+        transform: rotate(-40deg);
+    }
+    & span:nth-child(3) {
+        transform: rotate(40deg) translate(-.2em, -.24em);
     }
 }

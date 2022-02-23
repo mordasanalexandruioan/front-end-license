@@ -91,7 +91,7 @@ main section a:hover:after {
 }
 
 .menuButton {
-  margin: 0.2em 0.2em 0.2em auto;
+  margin: 0.2em 0.6em 0.2em auto;
   padding: 0;
   width: 24px;
   height: 28px;
@@ -109,6 +109,8 @@ main section a:hover:after {
   display: table;
   background-color: #0052d6;
   border-radius: 0.3em;
+  transition: transform 0.4s ease-in-out;
+  transform: rotate(0deg) translate(0em, 0em);
 }
 .menuButton span:nth-child(1) {
   width: 14px;
@@ -116,6 +118,16 @@ main section a:hover:after {
 .menuButton span:nth-child(3) {
   width: 14px;
   align-self: flex-end;
+}
+
+.menuButton.opened span:nth-child(1) {
+  transform: rotate(40deg) translate(0.2em, 0.2em);
+}
+.menuButton.opened span:nth-child(2) {
+  transform: rotate(-40deg);
+}
+.menuButton.opened span:nth-child(3) {
+  transform: rotate(40deg) translate(-0.2em, -0.24em);
 }
 
 .logo {
