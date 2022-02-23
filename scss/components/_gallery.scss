@@ -1,10 +1,12 @@
 .gallery {
     padding: 3em 0;
     & img {
-        width: 100%;
+        width: 300px;
+        height: 200px;
         margin: .5em 0;
         border-radius: .5em;
         display: table;
-        background-color: rgba(139, 139, 139, 0.637);
+        background-color: rgba(255, 255, 255, 0.287);
+        backdrop-filter: blur(2px);
     }
 }
