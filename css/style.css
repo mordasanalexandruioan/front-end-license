@@ -10,6 +10,9 @@ body {
 header {
   padding: 0;
 }
+header nav {
+  border-bottom: solid #b4b4b4 2px;
+}
 header nav ul {
   padding: 0;
   list-style: none;
@@ -17,6 +20,8 @@ header nav ul {
   background-color: #222;
   font-size: 1.2rem;
   height: 30vh;
+  overflow: hidden;
+  transition: height 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +36,21 @@ header nav ul li {
   margin: 0.15em 0;
   width: 100%;
   text-align: center;
+  transition: transform 1s;
+}
+
+header.closed nav ul {
+  height: 0px;
+}
+header.closed nav ul li {
+  transform: translateX(calc(var(--i) * -100%));
+}
+
+header.opened nav {
+  border: none;
+}
+header.opened nav ul {
+  height: 30vh;
 }
 
 main {

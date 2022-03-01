@@ -1,6 +1,7 @@
 header {
     padding: 0;
     & nav {
+        border-bottom: solid rgb(180, 180, 180) 2px;
         & ul {
             padding: 0;
             list-style: none;
@@ -8,6 +9,8 @@ header {
             background-color: #222;
             font-size: 1.2rem;
             height: 30vh;
+            overflow: hidden;
+            transition: height .5s;
             @include flexy($dir: column, $align: center, $just: center);
             & li a {
                 text-decoration: none;
@@ -18,7 +21,28 @@ header {
                 margin: .15em 0;
                 width: 100%;
                 text-align: center;
+                transition: transform 1s;
             }
+        }
+    }
+}
+
+header.closed {
+    & nav {
+        & ul {
+            height: 0px;
+            & li {
+                transform: translateX(calc(var(--i) * -100%));
+            }
+        }
+    }
+}
+
+header.opened {
+    & nav {
+        border: none;
+        & ul {
+            height: 30vh;
         }
     }
 }
