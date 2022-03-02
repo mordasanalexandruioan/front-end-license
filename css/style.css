@@ -29,11 +29,12 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #0052d6;
+  color: #0462f8;
   font-weight: 700;
+  font-size: 1.4rem;
 }
 header nav ul li {
-  margin: 0.15em 0;
+  margin: 0.2em 0;
   width: 100%;
   text-align: center;
   transition: transform 1s;
@@ -111,7 +112,7 @@ main section a:hover:after {
 }
 
 .menuButton {
-  margin: 0.2em 0.6em 0.2em auto;
+  margin: 0.5em 0.8em 0.5em auto;
   padding: 0;
   width: 24px;
   height: 28px;
@@ -141,17 +142,17 @@ main section a:hover:after {
 }
 
 .menuButton.opened span:nth-child(1) {
-  transform: rotate(40deg) translate(0.2em, 0.2em);
+  transform: rotate(40deg) translate(0.24em, 0.2em);
 }
 .menuButton.opened span:nth-child(2) {
   transform: rotate(-40deg);
 }
 .menuButton.opened span:nth-child(3) {
-  transform: rotate(40deg) translate(-0.2em, -0.24em);
+  transform: rotate(40deg) translate(-0.24em, -0.25em);
 }
 
 .logo {
-  padding-top: 0.3em;
+  padding: 0.3em 0 3em;
 }
 .logo img {
   width: 100%;
@@ -174,6 +175,19 @@ main section a:hover:after {
   display: table;
   background-color: rgba(255, 255, 255, 0.287);
   backdrop-filter: blur(2px);
+}
+
+.location {
+  padding-bottom: 1em;
+}
+.location .mapLocation {
+  width: 100%;
+  min-height: 280px;
+  border-top: solid 5px #0462f8;
+  border-bottom: solid 5px #0462f8;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  border-radius: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

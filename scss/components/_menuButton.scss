@@ -1,5 +1,5 @@
 .menuButton {
-    margin: .2em .6em .2em auto;
+    margin: .5em .8em .5em auto;
     padding: 0;
     width: 24px;
     height: 28px;
@@ -27,12 +27,12 @@
 
 .menuButton.opened {
     & span:nth-child(1) {
-        transform: rotate(40deg) translate(.2em, .2em);
+        transform: rotate(40deg) translate(.24em, .2em);
     }
     & span:nth-child(2) {
         transform: rotate(-40deg);
     }
     & span:nth-child(3) {
-        transform: rotate(40deg) translate(-.2em, -.24em);
+        transform: rotate(40deg) translate(-.24em, -.25em);
     }
 }

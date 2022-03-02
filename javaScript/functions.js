@@ -23,3 +23,6 @@ let eventMenuClick = e => {
         obj.classList.add("closed");
     }
 }
+
+
+//map location

@@ -14,11 +14,12 @@ header {
             @include flexy($dir: column, $align: center, $just: center);
             & li a {
                 text-decoration: none;
-                color: rgb(0, 82, 214);
+                color: rgb(4, 98, 248);
                 font-weight: 700;
+                font-size: 1.4rem;
             }
             & li {
-                margin: .15em 0;
+                margin: .2em 0;
                 width: 100%;
                 text-align: center;
                 transition: transform 1s;

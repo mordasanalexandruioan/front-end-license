@@ -1,0 +1,12 @@
+.location {
+    padding-bottom: 1em;
+    & .mapLocation {
+        width: 100%;
+        min-height: 280px;
+        border-top: solid 5px rgb(4, 98, 248);
+        border-bottom: solid 5px rgb(4, 98, 248);
+        border-left: solid 1px #000;
+        border-right: solid 1px #000;
+        border-radius: 1em;
+    }
+}
